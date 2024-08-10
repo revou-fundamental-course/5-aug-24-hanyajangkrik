@@ -3,10 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>calculator BMI</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1 style="text-align: center;">kalkulator BMI</h1>
+    </header>
+
+    <main style="display: flex;">
+        <aside style="solid;padding: 48px;">
+       <article>
+        <p>Body mass index (BMI) atau indeks massa tubuh adalah perkiraan lemak
+             tubuh yang didasarkan pada berat dan tinggi badan. Perhitungan ini
+              dapat membantu menentukan apakah kamu memiliki berat badan yang 
+              kurang, berat badan sehat, kelebihan berat badan, atau obesitas.</p>
+       </article>
+        <form style="padding:12px; background-color: rgb(238, 221, 197);">
     
+           <div>
+              <h3>jenis kelamin</h3>
+                <input type="radio" name="jenis kelamin" value="laki-laki">
+                <label for="laki-laki" id="laki-laki">laki-laki</label>
+                <input type="radio" name="jenis kelamin" value="perempuan">
+                <label for="perempuan" id="perempuan">perempuan</label>
+            </div>
+
+            <div>
+                <h3>Berat Badan</h3>
+                <input type="number" min="1" max="150">
+            </div>
+
+            <div>
+                <h3>Usia</h3>
+                <input type="number" min="1" max="100">
+            </div>
+
+            <div>
+                <h3>Tinggi Badan</h3>
+                <input type="number" min="1" max="200">
+            </div>
+             <div class="hai">
+                <button class="bg-gainsboro">Hitung aee</button>
+                <button class="bg-reset">reset</button>
+            </div>
+        </form>
+
+        <article>
+            <header>
+             <h2>Keterangan Form</h2>
+            </header>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type
+                specimen book. It has survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was popularised in 
+                the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </article>
+        </aside>
+
+        <aside style="padding: 48px;">
+        <section>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type
+                specimen book. It has survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was popularised in 
+                the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </article>
+        </section>
+        </aside>
+    </main>
+
+    <footer>
+        <p style="text-align: center;"> created by aanssyh.18</p>
+    </footer>
 </body>
 </html>

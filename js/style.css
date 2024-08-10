@@ -1,0 +1,31 @@
+button {
+    height: 32px;
+    background-color: gainsboro;
+    border: none;
+    border-radius: 4px;
+}
+
+.bg-gainsboro {
+    background-color: gainsboro;
+}
+
+.bg-reset {
+    background-color: red;
+    color: white;
+}
+.hai {
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+input[type=number] { 
+ 
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size:14px ;
+}
