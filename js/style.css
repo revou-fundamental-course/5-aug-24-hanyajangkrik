@@ -29,3 +29,6 @@ input[type=number] {
     font-family: monospace;
     font-size:14px ;
 }
+.rapi {
+    text-align: justify;
+}
