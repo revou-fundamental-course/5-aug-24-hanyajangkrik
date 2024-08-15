@@ -1,34 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+#Judul {
+  padding-top: 40px;
+}
 button {
-    height: 32px;
-    background-color: gainsboro;
-    border: none;
-    border-radius: 4px;
+  height: 32px;
+  background-color: gainsboro;
+  border: none;
+  border-radius: 4px;
 }
 
 .bg-gainsboro {
-    background-color: gainsboro;
+  background-color: gainsboro;
 }
 
 .bg-reset {
-    background-color: red;
-    color: white;
+  background-color: red;
+  color: white;
 }
 .hai {
-    margin-top: 24px;
-    margin-bottom: 16px;
+  margin-top: 24px;
+  margin-bottom: 16px;
 }
-input[type=number] { 
- 
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-family: monospace;
-    font-size:14px ;
+input[type="number"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: monospace;
+  font-size: 14px;
 }
 .rapi {
-    text-align: justify;
+  text-align: justify;
+  margin: 40px;
+  margin-bottom: 0px;
+  padding: 20px;
+  margin-top: 0px;
+}
+.tatanan {
+  display: flex;
+  justify-content: center;
+  justify-items: flex-start;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+}
+.utama {
+  display: flex;
+  justify-content: center;
+  justify-items: flex-start;
+  flex-direction: column;
+}
+.hasil {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+  flex-direction: column;
+}
+#hasil {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.form {
+  padding: 20px;
+  margin: 40px;
+  background-color: rgb(238, 221, 197);
+}
+.nilaiBMI {
+  padding: 20px;
+  margin: 40px;
+  background-color: rgb(238, 221, 197);
+}
+#penjelasan {
+  margin-top: 0px;
+  padding: 20px;
+  margin: 40px;
+}
+.box {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+}
+.box > p {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  align-items: center;
+}
+#BMI {
+  margin: 10px;
+  padding: 10px;
+  font-size: 24pt;
 }

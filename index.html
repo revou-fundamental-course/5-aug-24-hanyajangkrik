@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator BMI</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
-    <header>
-        <h1 style="text-align: center;">kalkulator BMI</h1>
-    </header>
+    <script src="js\scrip.js"></script>
 
-    <main style="display: flex;">
-        <aside style="solid;padding: 48px;">
+    <header>
+        <h1 style="text-align: center;" id="Judul">Kalkulator BMI</h1>
+    </header>
+<div class="tatanan">
+    <main class="utama">
        <article>
         <p class="rapi">Berat badan ideal merupakan impian semua orang termasuk diri kita sendiri. Tidak hanya memiliki tubuh
             yang menunjang penampilan, berat badan ideal juga menandakan bahawa kondisi badan kita sedang baik-baik 
             saja atau bisa dibilang <q>Sehat</q>. Lalu bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.
         </p>
        </article>
-        <form style="padding:12px; background-color: rgb(238, 221, 197);">
+        <form class="form">
     
            <div>
               <h3>jenis kelamin</h3>
@@ -31,28 +32,27 @@
 
             <div>
                 <h3>Berat Badan</h3>
-                <input type="number" min="1" max="150">
+                <input type="number" min="1" max="150" class="berat" id="input-weight">
             </div>
 
             <div>
                 <h3>Usia</h3>
-                <input type="number" min="1" max="100">
+                <input type="number" min="1" max="100" class="usia">
             </div>
 
             <div>
                 <h3>Tinggi Badan</h3>
-                <input type="number" min="1" max="200">
+                <input type="number" min="1" max="200" class="tinggi" id="input-height">
             </div>
              <div class="hai">
-                <button class="bg-gainsboro">Hitung aee</button>
-                <button class="bg-reset">reset</button>
+                <button class="bg-gainsboro" type="button" onclick="formValidation()">Hitung aee</button>
+                <button class="bg-reset" type="button" onclick="reset()">reset</button>
             </div>
         </form>
 
-        <article>
-            <header>
+        <article class="rapi">
              <h2>Keunggulan Fitur</h2>
-            </header>
+
             <p>
             <ol type="1">
                     <li>Menghitung berat badan</li>
@@ -63,28 +63,32 @@
                 <p cl>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak
                 boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasrkan
                 nilainya selain berkonsultasi dengan orang yang memenuhi sayarat seperti  dokter.</p>
-                <p class="rapi">
+                <p>
+                    <br>
                 Kalkukulator akan memberi anda gambaran  tentang perbandingan tentang perbandingan berat badan anda dengan nilai umum.
                 Indeksi Masa Tubuh (BMI) dihitung sebagai berat badan anda (dalam bentuk <q>Kg</q>), dibagi
                 dengan kuadrat tinggi badan anda (dalam meter <q>m</q>) atau BMI=Kg/M²</p>
             </p>
         </article>
-        </aside>
 
-        <aside style="padding: 48px;">
-        <section>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type
-                specimen book. It has survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was popularised in 
-                the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
-                more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </article>
-        </section>
-        </aside>
     </main>
 
+        <aside class="hasil">
+            <h2 id="hasil"><b>Hasil</b></h2>
+            <div class="nilaiBMI">
+                <div class="box">
+                    <p>hasil perhitungan BMI</p>
+                    <h2 id="BMI"></h2>
+                </div>
+                
+
+
+            </div>
+
+            <p id="penjelasan">Berat badan ideal merupakan impian semua orang termasuk diri kita sendiri. Tidak hanya memiliki tubuh yang menunjang penampilan, berat badan ideal juga menandakan bahawa kondisi badan kita sedang baik-baik saja atau bisa dibilang Sehat. Lalu bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.</p>
+        </article>
+        </aside>
+</div>
     <footer>
         <p style="text-align: center;"> created by aanssyh.18</p>
     </footer>
